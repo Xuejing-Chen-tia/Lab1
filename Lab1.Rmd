@@ -1,6 +1,6 @@
 ---
 title: "Lab1"
-author: "Your Name"
+author: "Tiana"
 date: "2024-09-05"
 output: "github_document"
 ---
@@ -39,10 +39,16 @@ datasaurus_dozen %>%
 ```{r}
 
 ggplot(datasaurus_dozen, aes(x = x, y = y, colour = dataset))+
-    geom_point()
+    geom_point()+ facet_wrap(~dataset)
 
+dino<- datasaurus_dozen %>%
+  filter(dataset == "dino")
+
+ggplot(dino, aes(x = x, y = y))+
+    geom_point(color="#FF00FF")+ theme_void() + labs(title="Hi, I'm a DINO~")+ theme(plot.title = element_text(hjust = 0.5, face = "bold", size = 20, color = "pink"))
 
 ```
+
 
 
 # Q1: What is the function of facet wrap? In what situation do you think you will use this function? 
