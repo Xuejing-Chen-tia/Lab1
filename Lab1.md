@@ -137,4 +137,10 @@ ggplot(dino, aes(x = x, y = y))+
 
 # Q1: What is the function of facet wrap? In what situation do you think you will use this function?
 
+It separates the dataset on one graph with a individual x-axis, y-axis,
+its label, and color. To use it when it comes to more than one x.
+
 # Q2: The means, standard deviations, and correlations are pretty much the same, but the data pattern looks very different for each dataset. What is the implication here?
+
+Even they have the same mean, standard deviation, they may show
+different graphs, and always check the descriptive stats.
